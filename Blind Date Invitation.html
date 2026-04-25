@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charest=""UTF-8>
+   <title>Blind Date Invitation</title>
+<style>
+   body     
+    font-family:Arial, sans-serif</font-family>;
+    background-color: #ffe6e6;
+    text-align: center;
+    padding: 50px;
+   
+   .card {
+
+   }
+   .card {
+    background: White;
+   }padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 50px;
+   
+   h1 {
+    color: #ff4d4d;
+   }
+   button {
+
+   }
+       padding: 10px 20px
+   margin:10px;
+   border-radius:10px;
+   cursor:pointer;
+{}
+     .Yes {
+        background-color: #4CAF50;
+        color:white;
+     }
+     .No {
+        background-color:#af4c6d;
+        color:White;
+     }
+     </style>
+     <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+     <body>
+        <div class="card">
+            <h1>you're invited❤️</h1>
+            <p>Hey🙂 </p>
+            <p>I've been thinking ... how about we go on a blind date?</p>
+            <p>No pressure, just vibes<meta charest="UTF-8"></p>
+            <button class="YES" onclick="yesclicked()">yes😍
+                <button class="NO" onclick="noclicked()">no😢</button>
+                <p id="respone">Response will appear here.
+                </p>
+            </div>
+
+            <script>
+                function yesclicked() {
+                    document.getElementById("respone").innerHTML = "yay! i will text you the detials😊💕";
+                }
+                function noclicked() {
+                    document.getElementById("respone").innerHTML = "Aww... maybe next time😢";
+
+                }
+                </script>
+
+                <body>
+                    </html>
+
+            
+        
+    
+
+
+
